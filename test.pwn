@@ -6,7 +6,8 @@ new
 	gPlayerKills[MAX_PLAYERS],
 	gPlayerDeaths[MAX_PLAYERS],
 	Float: gPlayerHealth[MAX_PLAYERS],
-	gPlayerPhrase[MAX_PLAYERS][30];
+	gPlayerPhrase[MAX_PLAYERS][30],
+	
 
 main() {
 	// write tests for libraries here and run "sampctl package run"
@@ -21,6 +22,8 @@ public OnGameModeInit() {
 	AddAccountData("phrase", TYPE_STRING, gPlayerPhrase);
 	return 1;
 }
+
+new ver
 
 public OnPlayerRegister(playerid) {
 	SendClientMessageToAll(0x00FF00FF, "A new member has joined the server!");
